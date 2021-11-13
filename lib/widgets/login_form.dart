@@ -108,10 +108,10 @@ class _LoginFormState extends State<LoginForm> {
                 onPressed: () async {
                   if (_formkey.currentState!.validate()) {
                     //_submit();
-                    //Navigator.pushNamed(context, 'elecciones');
+                    Navigator.pushNamed(context, 'elecciones');
                   }
                   _submit();
-                  Navigator.pushNamed(context, 'elecciones');
+                  //Navigator.pushNamed(context, 'elecciones');
                   //_submit();
                 },
                 child: Text(
