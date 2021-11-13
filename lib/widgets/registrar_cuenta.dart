@@ -94,10 +94,11 @@ class _RegistrarCuentaState extends State<RegistrarCuenta> {
                   // ignore: unnecessary_this
                   if (_formkey.currentState!.validate()) {
                     print("guardar");
+                    Navigator.pushNamed(context, 'iniciarsesion');
                   }
                   // ignore: unnecessary_this
                   _submit();
-                  Navigator.pushNamed(context, 'iniciarsesion');
+                  //Navigator.pushNamed(context, 'iniciarsesion');
                 },
                 child: Text(
                   "𝗖𝗿𝗲𝗮𝗿 𝗖𝘂𝗲𝗻𝘁𝗮",

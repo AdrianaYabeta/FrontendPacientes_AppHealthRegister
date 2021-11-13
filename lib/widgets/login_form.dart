@@ -107,9 +107,11 @@ class _LoginFormState extends State<LoginForm> {
               child: ElevatedButton(
                 onPressed: () async {
                   if (_formkey.currentState!.validate()) {
-                    _submit();
-                    Navigator.pushNamed(context, 'elecciones');
+                    //_submit();
+                    //Navigator.pushNamed(context, 'elecciones');
                   }
+                  _submit();
+                  Navigator.pushNamed(context, 'elecciones');
                   //_submit();
                 },
                 child: Text(
